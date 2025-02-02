@@ -4,6 +4,7 @@
 
 body {
     margin: 0px;
+    font-family: "Space Grotesk", serif;
 }
 
 header {
@@ -11,12 +12,31 @@ header {
     height: 76px;
     border-bottom: 1px solid #f8e0f8;
     display: flex;
-    background-color: #fff
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 0px 70px;
 }
 
 header img {
     width: 151px;
     height: 40px;
-    margin: 18px auto;
+    margin-right: 32px;
 
+}
+
+.menu__wrapper {
+    display: flex;
+}
+
+.menu__wrapper a{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    margin-right: 32px;
+    white-space: nowrap;
+    opacity: 0.5;
 }
