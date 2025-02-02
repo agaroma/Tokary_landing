@@ -40,3 +40,65 @@ header img {
     white-space: nowrap;
     opacity: 0.5;
 }
+
+/* start first__screen */
+
+.first__screen {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+}
+
+.first__screen h1 {
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    font-size: 80px;
+    line-height: 96px;
+    text-shadow: -5px 5px 0px #fff;
+    margin: 0 auto;
+    padding-top: 117px;
+}
+
+.first__screen p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #532c53;
+    padding-top: 32px;
+    margin-bottom: 32px;
+}
+
+.first__screen button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 114px;
+    padding: 16px 20px;
+    background: #532c59;
+    border-radius: 15px;
+    margin: 0 auto;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    white-space: nowrap;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.first__screen__bg {
+    position: absolute;
+    width: 1440px;
+    height: 499px;
+    left: 0px;
+    top: 57px;
+    background: #532c59;
+    background: radial-gradient(50% 50% at 50% 50%, #E36CE6 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.4;
+    filter: blur(116px);
+    z-index: -1;
+
+}
