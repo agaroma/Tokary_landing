@@ -1,4 +1,6 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
@@ -29,7 +31,7 @@ header img {
     display: flex;
 }
 
-.menu__wrapper a{
+.menu__wrapper a {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
@@ -47,6 +49,8 @@ header img {
     display: flex;
     flex-flow: column;
     position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .first__screen h1 {
@@ -100,5 +104,35 @@ header img {
     opacity: 0.4;
     filter: blur(116px);
     z-index: -1;
+}
 
+.first__screen img {
+    position: absolute;
+}
+
+.first__screen__img1 {
+    width: 173px;
+    height: 174px;
+    top: 5px;
+}
+
+.first__screen__img2 {
+    width: 111px;
+    height: 112px;
+    top: 67px;
+    right: 167px;
+}
+
+.first__screen__imgw3 {
+    width: 299px;
+    height: 300px;
+    top: 298px;
+    left: -16px;
+}
+
+.first__screen__img4 {
+    width: 211px;
+    height: 211px;
+    top: 387px;
+    right: 33px;
 }
