@@ -136,3 +136,22 @@ header img {
     top: 387px;
     right: 33px;
 }
+
+/* section__partners */
+
+.section__partners img {
+    gap: 40px;
+    width: 150px;
+    height: 40px;
+}
+
+.section__partners {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 40px 0px;
+    margin-top: 101px;
+    max-width: 1440px;
+    gap: 40px;
+    
+}
