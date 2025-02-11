@@ -108,6 +108,24 @@
                 <span>Bomb bahh bahh Bomb bahh bahh<br> Bomb bahh bahh Bomb bahh bahh</span>
             </div>
 
+            <div class="wrapper__collections">
+                <img src="img/section__collections/bomb.jpg">
+                <p>Bomb</p>
+                <span>Bomb bahh bahh Bomb bahh bahh<br> Bomb bahh bahh Bomb bahh bahh</span>
+            </div>
+
+            <div class="wrapper__collections">
+                <img src="img/section__collections/bomb.jpg">
+                <p>Bomb</p>
+                <span>Bomb bahh bahh Bomb bahh bahh<br> Bomb bahh bahh Bomb bahh bahh</span>
+            </div>
+
+            <div class="wrapper__collections">
+                <img src="img/section__collections/bomb.jpg">
+                <p>Bomb</p>
+                <span>Bomb bahh bahh Bomb bahh bahh<br> Bomb bahh bahh Bomb bahh bahh</span>
+            </div>
+
         </div>
     </section>
 
@@ -148,10 +166,61 @@
 
     <section class="section__qanda">
 
-        <div class="qa__wrapper">
-            <p>Aasa awdaw wads?</p>
-            <img id="btn" src="img/section__qanda/arr.svg" width="24" height="24">    
-            <span class="span" style="max-height: 0;">svsdv ds ssdvs dsvsd dsvs</span>
+        <div class="text__wrapper">
+            <h2>dssdvsd dssds fdssds</h2>
+            <h3>sdfsfs fsdfsd fsdfsfsdf dsfsdf</h3>
+        </div>
+
+        <div class="wrapper1">
+            <div class="qa__wrapper">
+                <p>Aasa awdaw wads?</p>
+                <img id="btn" src="img/section__qanda/arr.svg" width="24" height="24">
+                <span class="span" style="max-height: 60;">svsdv ds ssdvs dsvsd dsvs</span>
+            </div>
+
+            <div class="qa__wrapper">
+                <p>Aasa awdaw wads?</p>
+                <img id="btn" src="img/section__qanda/arr.svg" width="24" height="24">
+                <span class="span" style="max-height: 0;">svsdv ds ssdvs dsvsd dsvs</span>
+            </div>
+
+            <div class="qa__wrapper">
+                <p>Aasa awdaw wads?</p>
+                <img id="btn" src="img/section__qanda/arr.svg" width="24" height="24">
+                <span class="span" style="max-height: 0;">svsdv ds ssdvs dsvsd dsvs</span>
+            </div>
+
+            <div class="qa__wrapper">
+                <p>Aasa awdaw wads?</p>
+                <img id="btn" src="img/section__qanda/arr.svg" width="24" height="24">
+                <span class="span" style="max-height: 0;">svsdv ds ssdvs dsvsd dsvs</span>
+            </div>
+        </div>
+
+        <div class="wrapper2">
+            <div class="qa__wrapper">
+                <p>Aasa awdaw wads?</p>
+                <img id="btn" src="img/section__qanda/arr.svg" width="24" height="24">
+                <span class="span" style="max-height: 0;">svsdv ds ssdvs dsvsd dsvs</span>
+            </div>
+    
+            <div class="qa__wrapper">
+                <p>Aasa awdaw wads?</p>
+                <img id="btn" src="img/section__qanda/arr.svg" width="24" height="24">
+                <span class="span" style="max-height: 0;">svsdv ds ssdvs dsvsd dsvs</span>
+            </div>
+    
+            <div class="qa__wrapper">
+                <p>Aasa awdaw wads?</p>
+                <img id="btn" src="img/section__qanda/arr.svg" width="24" height="24">
+                <span class="span" style="max-height: 0;">svsdv ds ssdvs dsvsd dsvs</span>
+            </div>
+    
+            <div class="qa__wrapper">
+                <p>Aasa awdaw wads?</p>
+                <img id="btn" src="img/section__qanda/arr.svg" width="24" height="24">
+                <span class="span" style="max-height: 0;">svsdv ds ssdvs dsvsd dsvs</span>
+            </div>
         </div>
 
     </section>
@@ -163,24 +232,30 @@
 
     </footer>
     <script>
-        let btn = document.querySelector('#btn')
-        let span = document.querySelector('.span')
-        let qa__wrapper = document.querySelector('.qa__wrapper')
+        let qa__wrapper = document.querySelectorAll('.qa__wrapper')
 
-        qa__wrapper.addEventListener('click', () => {
+        qa__wrapper.forEach(el => {
+            el.addEventListener('click', () => {
 
+                let span = el.childNodes[5]
+                let btn = el.childNodes[3]
+                let qa__wrapper = el
 
-            if(span.style.maxHeight === '0px') {
-                span.style.maxHeight = span.scrollHeight + 'px'
-                qa__wrapper.style.background = '#fff'
-                btn.style.transform = 'rotate(180deg)'
-            } else {
-                span.style.maxHeight = 0
-                qa__wrapper.style.background = '#fcfaff'
-                btn.style.transform = 'rotate(0deg)'
-            }
+                console.log(el.childNodes)
+                if (span.style.maxHeight === '0px') {
+                    span.style.maxHeight = span.scrollHeight + 'px'
+                    qa__wrapper.style.background = '#fff'
+                    btn.style.transform = 'rotate(180deg)'
+                } else {
+                    span.style.maxHeight = 0
+                    qa__wrapper.style.background = '#fcfaff'
+                    btn.style.transform = 'rotate(0deg)'
+                }
+
+            })
 
         })
+
     </script>
 </body>
 
