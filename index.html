@@ -56,7 +56,8 @@
 
     <section class="section__team">
         <div class="nft__h2">Our Team</div>
-        <div class="nft__h3">asdadsa asfffff sfad asasf awsfaff geregerg gegerge wq saasf<br> wafwfwq fwsfqwfqf awfwgeerger egerg greewer qfqwfqwfqf fwas</div>
+        <div class="nft__h3">asdadsa asfffff sfad asasf awsfaff geregerg gegerge wq saasf<br> wafwfwq fwsfqwfqf
+            awfwgeerger egerg greewer qfqwfqwfqf fwas</div>
         <div class="wrapper">
             <div class="team__wrapper">
                 <img src="img/section__team/girl.jpg">
@@ -85,7 +86,8 @@
 
     <section class="section__collections">
         <div class="nft__h2">sasac ascascsacasc</div>
-        <div class="nft__h3">acascasscsa acsac sacasca ascascasc sacascasca ascsac ascasc csacsa<br> ascasc casascsaca ascascacas csacasacs ascacsacsca csascacas csa sacasca ascaa scasacas scaasca scacasc saca</div>
+        <div class="nft__h3">acascasscsa acsac sacasca ascascasc sacascasca ascsac ascasc csacsa<br> ascasc casascsaca
+            ascascacas csacasacs ascacsacsca csascacas csa sacasca ascaa scasacas scaasca scacasc saca</div>
 
         <div class="wrapper">
             <div class="wrapper__collections">
@@ -111,7 +113,7 @@
 
     <!-- end section__collections-->
     <!-- start section__provide-->
-     <section class="section__provide">
+    <section class="section__provide">
         <div class="nft__h2">We provide</div>
         <div class="nft__h3">acascasscsa acsac sacasca ascasc csacsa<br> ascasc casascsaca ascascacas csacasacs </div>
 
@@ -140,12 +142,46 @@
                 <span>sdvwsd sdvsdv dsvs<br> dvssdv dsvvd sdvsvd</span>
             </div>
         </div>
-     </section>
+    </section>
     <!-- end section__provide-->
+    <!-- start section__qanda-->
+
+    <section class="section__qanda">
+
+        <div class="qa__wrapper">
+            <p>Aasa awdaw wads?</p>
+            <img id="btn" src="img/section__qanda/arr.svg" width="24" height="24">    
+            <span class="span" style="max-height: 0;">svsdv ds ssdvs dsvsd dsvs</span>
+        </div>
+
+    </section>
+
+    <!-- end section__qanda-->
+
 
     <footer>
 
     </footer>
+    <script>
+        let btn = document.querySelector('#btn')
+        let span = document.querySelector('.span')
+        let qa__wrapper = document.querySelector('.qa__wrapper')
+
+        qa__wrapper.addEventListener('click', () => {
+
+
+            if(span.style.maxHeight === '0px') {
+                span.style.maxHeight = span.scrollHeight + 'px'
+                qa__wrapper.style.background = '#fff'
+                btn.style.transform = 'rotate(180deg)'
+            } else {
+                span.style.maxHeight = 0
+                qa__wrapper.style.background = '#fcfaff'
+                btn.style.transform = 'rotate(0deg)'
+            }
+
+        })
+    </script>
 </body>
 
 </html>
