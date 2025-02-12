@@ -23,3 +23,5 @@ let qa__wrapper = document.querySelectorAll('.qa__wrapper')
             })
 
         })
+
+        
