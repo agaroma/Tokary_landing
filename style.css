@@ -16,7 +16,7 @@ body {
     line-height: 64px;
     text-align: center;
     color: #000;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
 }
 
 .tokar__h3 {
@@ -178,48 +178,120 @@ header img {
     flex-flow: column;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 50px;
     max-width: 1440px;
+    margin-top: 30px;
 }
-
-.section__services .wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    padding-top: 50px;
+  
+.karusel_snimka{
+    border-radius: 5px;
+    overflow: hidden;
+    width: 712px;
+    height: 364px;
+    border: 3px solid rgb(0, 70, 36);
+    box-shadow: 0 5px 18px rgba(0, 105, 28, 0.6);
     margin: 0 auto;
-}
-
-.services__wrapper {
-    width: 301px;
-    margin: 0 16px;
+  }
+  
+  .karusel_shoumev{
+    width: 500%;
+    height: 364px;
     display: flex;
-    flex-flow: column;
-    align-items: center;
-    padding-bottom: 100px;
-}
-
-.services__wrapper p {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 36px;
-    text-align: center;
-    color: #000;
-    margin: 12px 0;
-}
-
-.services__wrapper span {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    color: #532c59;
-}
-
-.services__wrapper img {
-    width: 48px;
-    height: 48px;
-}
-
+  }
+  
+  .karusel_shoumev input{
+    display: none;
+  }
+  
+  .sekus{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .sekus img{
+    width: 712px;
+    height: 364px;
+  }
+  
+  .rukovodstvo_navigats{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 712px;
+    margin-top: -40px;
+  }
+  
+  .manual-btn {
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 1s;
+    border: 2px solid #007a1f;
+    padding: 5px;
+    width: 42px;
+    box-shadow: 1px 1px 5px 0px rgb(70 67 67 / 63%), 0px 0px 3px 0px rgb(40 37 37 / 60%);
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #dd7a15;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    justify-content: center;
+    margin-top: 460px;
+    display: flex;
+    width: 800px;
+  }
+  
+  .automobile-sliv div{
+    border-radius: 8px;
+    transition: 1s;
+    border: 2px solid #f3b03a;
+    padding: 5px;
+    width: 30px;
+  }
+  
+  .automobile-sliv div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .automobile-sliv .auto-btn1{
+    background: #d8f33a;
+  }
+  
+  #radio2:checked ~ .automobile-sliv .auto-btn2{
+     
+    background: #d8f33a;
+  }
+  
+  #radio3:checked ~ .automobile-sliv .auto-btn3{
+    background: #d8f33a;
+  }
+  
+  #radio4:checked ~ .automobile-sliv .auto-btn4{
+    background: #d8f33a;
+  }
 
 /* section__advantages */
 

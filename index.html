@@ -41,32 +41,36 @@
 
         <div class="tokar__h2">Послуги</div>
 
-        <div class="wrapper">
-            <div class="services__wrapper">
-                <img src="img/section__provide/kop.png">
-                <p>Poznachka</p>
-                <span>sdvwsd sdvsdv dsvs<br> dvssdv dsvvd sdvsvd</span>
+        <div class="karusel_snimka">
+            <div class="karusel_shoumev">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <div class="sekus first">
+            <img src="./img/section__collections/bomb.jpg" alt="Послуги">
             </div>
-
-            <div class="services__wrapper">
-                <img src="img/section__provide/kop.png">
-                <p>Poznachka</p>
-                <span>sdvwsd sdvsdv dsvs<br> dvssdv dsvvd sdvsvd</span>
+            <div class="sekus">
+            <img src="./img/section__collections/bomb.jpg" alt="Послуги">
             </div>
-
-            <div class="services__wrapper">
-                <img src="img/section__provide/kop.png">
-                <p>Poznachka</p>
-                <span>sdvwsd sdvsdv dsvs<br> dvssdv dsvvd sdvsvd</span>
+            <div class="sekus">
+            <img src="./img/section__collections/bomb.jpg" alt="Послуги">
             </div>
-
-            <div class="services__wrapper">
-                <img src="img/section__provide/kop.png">
-                <p>Poznachka</p>
-                <span>sdvwsd sdvsdv dsvs<br> dvssdv dsvvd sdvsvd</span>
+            <div class="sekus">
+            <img src="./img/section__collections/bomb.jpg" alt="Послуги">
             </div>
-        </div>
+            </div>
+          
+            <div class="rukovodstvo_navigats">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            </div>
+          </div>
     </section>
+
+
 
     <!-- end section__services-->
      <!-- start advantages-->
@@ -277,32 +281,7 @@
     </footer>
 
     <!-- footer end -->
-    <script>
-        let qa__wrapper = document.querySelectorAll('.qa__wrapper')
-
-        qa__wrapper.forEach(el => {
-            el.addEventListener('click', () => {
-
-                let span = el.childNodes[5]
-                let btn = el.childNodes[3]
-                let qa__wrapper = el
-
-                console.log(el.childNodes)
-                if (span.style.maxHeight === '0px') {
-                    span.style.maxHeight = span.scrollHeight + 'px'
-                    qa__wrapper.style.background = '#fff'
-                    btn.style.transform = 'rotate(180deg)'
-                } else {
-                    span.style.maxHeight = 0
-                    qa__wrapper.style.background = '#fcfaff'
-                    btn.style.transform = 'rotate(0deg)'
-                }
-
-            })
-
-        })
-
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
