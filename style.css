@@ -47,9 +47,9 @@ header .wrapper {
 }
 
 header img {
-    width: 70px;
-    height: 70px;
-    margin-right: 32px;
+    width: 65px;
+    height: 65px;
+    margin-left: -5px;
 
 }
 
@@ -79,7 +79,7 @@ header img {
 }
 
 .menu__wrapper a {
-    font-weight: 500;
+    font-weight: bold;
     font-size: 18px;
     line-height: 20px;
     color: #fff;
@@ -87,7 +87,13 @@ header img {
     display: flex;
     margin-right: 32px;
     white-space: nowrap;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
     
+}
+
+.menu__wrapper a:hover {
+    color: #939393; /* Темніший відтінок */
+    transform: translateY(-2px); /* Легке підняття */
 }
 
 /* start first__screen */
