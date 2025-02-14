@@ -242,24 +242,41 @@ header img {
 }
 
 .text__1 {
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: bold;
+    font-size: 24px;
     line-height: 24px;
-    text-align: center;
-    color: #532c59;
+    text-align: start;
+    margin-left: 18px;
+    color: #006921;
 }
 
 .criteria1 {
     display: flex;
     justify-content: center;
     flex-flow: column;
+    margin: 0 auto;
+    padding: 20px 30px;
     max-width: 1440px;
-    border: 1px solid #004116;
+    margin-bottom: 50px;
+    border: 2px solid #006921;
+    border-radius: 20px;
+    background-color: #f3f4f6;
 }
 
 .card {
     position: relative;
     width: 220px;  
+    height: 150px;  
+    border-radius: 10px;
+    overflow: hidden; 
+    margin: 16px 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  .card__two {
+    position: relative;
+    width: 283px;  
     height: 150px;  
     border-radius: 10px;
     overflow: hidden; 
