@@ -247,7 +247,7 @@ header img {
     line-height: 24px;
     text-align: start;
     margin-left: 18px;
-    color: #006921;
+    color: #555555;
 }
 
 .criteria1 {
@@ -258,7 +258,7 @@ header img {
     padding: 20px 30px;
     max-width: 1440px;
     margin-bottom: 50px;
-    border: 2px solid #006921;
+    border: 2px solid #555555;
     border-radius: 20px;
     background-color: #f3f4f6;
 }
@@ -301,6 +301,11 @@ header img {
     transform: scale(1.1);
     filter: brightness(0.5);
   }
+
+  .card__two:hover .card-image {
+    transform: scale(1.1);
+    filter: brightness(0.5);
+  }
   
   /* Текстовий блок (спочатку "захований" нижче, але так, щоб заголовок був видимий) */
   .card-text-block {
@@ -310,7 +315,7 @@ header img {
     width: 100%;
     background: rgba(0, 0, 0, 0.6);  /* Напівпрозорий фон для читабельності */
     color: #fff;
-    padding: 20px;
+    padding: 5px 20px;
     box-sizing: border-box;
     transition: transform 0.5s ease;
   
@@ -327,6 +332,11 @@ header img {
   .card:hover .card-text-block {
     transform: translateY(0);
   }
+
+    /* При наведенні картки блок піднімається, відкриваючи додатковий текст */
+    .card__two:hover .card-text-block {
+        transform: translateY(0);
+      }
   
   /* Стилі для заголовка та абзацу */
   .card-text-block h3 {
