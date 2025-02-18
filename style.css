@@ -376,9 +376,6 @@ header img {
     transition: transform 0.5s ease, filter 0.5s ease;
   }
 
-  
-  
-  /* При наведенні зображення збільшується та темнішає */
   .card:hover .card-image {
     transform: scale(1.1);
     filter: brightness(0.5);
@@ -389,38 +386,28 @@ header img {
     filter: brightness(0.5);
   }
   
-  /* Текстовий блок (спочатку "захований" нижче, але так, щоб заголовок був видимий) */
   .card-text-block {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7);  /* Напівпрозорий фон для читабельності */
+    background: rgba(0, 0, 0, 0.7);
     color: #fff;
     padding: 5px 20px;
     box-sizing: border-box;
     transition: transform 0.5s ease;
-  
-    /*
-      Припустимо, весь блок заввишки ~120px, 
-      а заголовок займає близько 60px.
-      Зміщуємо блок так, щоб заголовок був повністю видимий,
-      а решта тексту - схована.
-    */
     transform: translateY(calc(100% - 60px));
   }
   
-  /* При наведенні картки блок піднімається, відкриваючи додатковий текст */
   .card:hover .card-text-block {
     transform: translateY(0);
   }
 
-    /* При наведенні картки блок піднімається, відкриваючи додатковий текст */
+
     .card__two:hover .card-text-block {
         transform: translateY(0);
       }
   
-  /* Стилі для заголовка та абзацу */
   .card-text-block h3 {
     margin: 0 0 30px;
     font-size: 1.2rem;
@@ -432,9 +419,9 @@ header img {
   }
   
 
-/* section__ready*/
+/* section__email__form*/
 
-.section__ready {
+.section__email__form {
     display: flex;
     margin: 0 auto;
     justify-content: center;
