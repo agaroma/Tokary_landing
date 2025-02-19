@@ -109,36 +109,36 @@ header img {
     background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
+.first__screen .first__text {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
 .first__screen h1 {
-    display: inline-block;
-    text-align: start;
     font-weight: 700;
+    margin: 0 600px 20px 0;
+    padding: 180px 0 10px 0;
     color: #fff;
     font-size: 90px;
     line-height: 96px;
     text-shadow: -1px 1px 0px #006921;
-    margin: 0 auto;
-    margin-left: 150px;
-    padding-top: 180px;
-    padding-bottom: 14px;
     border-bottom: 1px solid #86E900;
 }
 
 .first__screen p {
+    margin: 0 555px 14px 0;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    text-align: start;
     color: #ffffff;
-    margin-left: 150px;
     padding-bottom: 30px;
 }
 
 .first__screen button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 150px;
+    margin: 0 1020px 20px 0;
     padding: 20px 24px;
     background: linear-gradient(180deg, #86E900 0%, #006921 100%);
     box-shadow: 0px 4px 4px rgba(0, 55, 15, 0.2);
