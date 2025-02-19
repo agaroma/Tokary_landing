@@ -446,7 +446,8 @@ header img {
 
 .section__email__form .row {
     display: flex;
-    flex-flow: row;
+    justify-content: center;
+    align-items: center;
     align-items: center;
     gap: 10px;
 }
