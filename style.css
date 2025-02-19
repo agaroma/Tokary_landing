@@ -569,59 +569,6 @@ header img {
     box-shadow: 0 2px 100px rgba(0, 105, 33, 0.5);
 }
 
-/* section__collections */
-
-.section__collections {
-    display: flex;
-    flex-flow: column;
-    margin: 0 auto;
-    max-width: 1440px;
-
-}
-
-.section__collections .wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    padding-top: 64px;
-
-}
-
-.wrapper__collections {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    max-width: 412px;
-    margin: 0 16px;
-    margin-bottom: 64px;
-}
-
-.wrapper__collections img {
-    width: 412px;
-    height: 396px;
-    border-radius: 15px;
-}
-
-.wrapper__collections p {
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 42px;
-    text-align: center;
-    color: #000;
-    margin: 0;
-    padding-bottom: 12px;
-}
-
-.wrapper__collections span {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    color: #532c59;
-    margin: 0;
-    padding-bottom: 12px;
-}
-
 /* section__qanda*/
 
 .section__qanda {
