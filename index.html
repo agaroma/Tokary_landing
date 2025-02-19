@@ -205,35 +205,48 @@
 
             <form action="">
 
-                <span>Твоє ім'я</span>
+                <span>Ваше прізвище та ім'я</span>
                 <input type="text" name="name" id="" class="box" required 
                 placeholder="Введіть ваше ім'я" autocomplete="off">
 
-                    <span>Твой емейл</span>
+                    <span>Ваша електронна пошта</span>
                 <input type="email" name="email" id="" class="box" required placeholder="Введіть ваший емейл"
                     autocomplete="off">
 
-                    <span>Твій номер</span>
+                    <span>Ваш номер телефону</span>
                 <input type="number" name="number" id="" class="box" required placeholder="Введіть ваш номер"
                     autocomplete="off">
 
-                    <span>Виберіть</span>
-                <select name="cources" id="" class="box" required>
-                    <option value="" disabled selected>вибір</option>
-                    <option value="Ynnn">dssd</option>
-                    <option value="sasa">sds</option>
+                    <span>Виберіть послугу</span>
+                <select name="obrobka" id="" class="box" required>
+                    <option value="" disabled selected>Який тип обробки?</option>
+                    <option value="Чистове точіння">Чистове точіння</option>
+                    <option value="Чорнове точіння">Чорнове точіння</option>
+                    <option value="Точіння фасок та канавок">Точіння фасок та канавок</option>
+                    <option value="Різьбонарізання">Різьбонарізання</option>
+                    <option value="Свердління та розточування">Свердління та розточування</option>
+                    <option value="Інше">Інше</option>
                 </select>
 
-                <span>Вибір чогось</span>
-                <div class="gender">
-                    <input type="radio" name="gender" id="male" value="male">
-                    <label for="male">male</label>
+                <select name="details" id="" class="box" required>
+                    <option value="" disabled selected>Який тип деталей?</option>
+                    <option value="Точіння валів, осей, шпинделів">Точіння валів, осей, шпинделів</option>
+                    <option value="Обробка фланців та кілець">Обробка фланців та кілець</option>
+                    <option value="Виготовлення втулок, шайб, гайок">Виготовлення втулок, шайб, гайок</option>
+                    <option value="Точіння конічних і сферичних поверхонь">Точіння конічних і сферичних поверхонь</option>
+                    <option value="Інше">Інше</option>
+                </select>
 
-                    <input type="radio" name="gender" id="frau" value="frau">
-                    <label for="frau">frau</label>
+                <span>Маєте сировину?</span>
+                <div class="gender">
+                    <input type="radio" name="gender" id="yes" value="yes">
+                    <label for="yes">Так</label>
+
+                    <input type="radio" name="gender" id="no" value="no">
+                    <label for="no">Ні</label>
                 </div>
 
-                <input type="submit" value="Send data" class="btn__form" name="send">
+                <input type="submit" value="Відправити" class="btn__form" name="send">
             </form>
 
         </div>
