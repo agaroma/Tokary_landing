@@ -668,7 +668,7 @@ footer .top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 50px;
+    padding: 0 50px 40px 50px;
     border-bottom: 1px solid #006921;
 }
 
@@ -683,7 +683,7 @@ footer .top a {
     line-height: 20px;
     color: #006921;
     text-decoration: none;
-    margin: 0 36px;
+    margin: 0 24px;
 }
 
 footer .bottom {

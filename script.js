@@ -23,3 +23,28 @@ let qa__wrapper = document.querySelectorAll('.qa__wrapper')
             });
 
         });
+
+
+         // Отримуємо всі посилання, що ведуть на якорі (починаються з #)
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault(); // Забороняємо стандартну поведінку (миттєвий перехід)
+      const targetID = this.getAttribute('href'); // Напр. "#services"
+      const targetElement = document.querySelector(targetID);
+
+      if (targetElement) {
+        // Скролимо до секції з плавною анімацією
+        targetElement.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  document.getElementById('contactBtn1').addEventListener('click', function() {
+    document.getElementById('contacts').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  document.getElementById('contactBtn2').addEventListener('click', function() {
+    document.getElementById('contacts').scrollIntoView({ behavior: 'smooth' });
+  });
