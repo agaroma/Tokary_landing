@@ -574,8 +574,9 @@ header img {
 .section__qanda {
     display: flex;
     justify-content: center;
-    max-width: 1440px;
     margin: 0 auto;
+    padding: 50px 0;
+    background-color: #f3f4f6;
 }
 
 .section__qanda .wrapper1 {
@@ -584,11 +585,11 @@ header img {
 
 .qa__wrapper {
     padding: 24px;
-    border: 2px solid #d6bcfa;
+    border: 2px solid #006921;
     border-radius: 15px;
     background: #fcfaff;
     position: relative;
-    max-width: 412px;
+    max-width: 350px;
     height: fit-content;
     margin-bottom: 24px;
     cursor: pointer;
@@ -607,17 +608,17 @@ header img {
 .qa__wrapper span {
     display: flex;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
-    color: #532c59;
+    color: #006921;
     overflow: hidden;
     transition: 0.3s;
 }
 
 .qa__wrapper img {
     position: absolute;
-    right: 24px;
-    top: 24px;
+    right: 10px;
+    top: 10px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -640,10 +641,16 @@ header img {
 
 .section__qanda h3 {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 24px;
-    color: #532c59;
+    color: #006921;
     margin: 0;
+}
+
+.section__qanda .text__wrapper img {
+    margin: 0 auto;
+    height: 400px;
+    width: 400px;
 }
 
 /* section__services */
