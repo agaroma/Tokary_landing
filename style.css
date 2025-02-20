@@ -696,6 +696,31 @@ footer .bottom {
     padding: 40px 0;
 }
 
+/* buttons start */
+
+.scroll-top-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    background-color: #006921; /* Колір фону */
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;         /* Спочатку прихована */
+    visibility: hidden; /* Щоб не можна було натиснути */
+    transition: opacity 0.3s ease, visibility 0.3s;
+    z-index: 999;       /* Щоб бути поверх інших елементів */
+  }
+  
+  .scroll-top-btn:hover {
+    background-color: #008b2f; /* Трохи світліше при наведенні */
+  }
+  
+
 /* mobile__version */
 
 @media (max-width: 1000px) {

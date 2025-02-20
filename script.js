@@ -24,6 +24,8 @@ let qa__wrapper = document.querySelectorAll('.qa__wrapper')
 
         });
 
+//////////////////////////////////////////////////////////////
+
 
          // Отримуємо всі посилання, що ведуть на якорі (починаються з #)
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -41,10 +43,46 @@ let qa__wrapper = document.querySelectorAll('.qa__wrapper')
     });
   });
 
+  //////////////////////////////////////////////////////////////////////
+
   document.getElementById('contactBtn1').addEventListener('click', function() {
     document.getElementById('contacts').scrollIntoView({ behavior: 'smooth' });
-  });
+  }); 
+
+  //////////////////////////////////////////////////////////////////////////////
 
   document.getElementById('contactBtn2').addEventListener('click', function() {
     document.getElementById('contacts').scrollIntoView({ behavior: 'smooth' });
   });
+
+  ////////////////////////////////////////////////////////////////////////////
+
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+  // Відслідковуємо прокрутку сторінки
+  window.addEventListener('scroll', () => {
+    // Якщо прокручено більше 300px, показуємо кнопку
+    if (window.scrollY > 300) {
+      scrollTopBtn.style.opacity = '1';
+      scrollTopBtn.style.visibility = 'visible';
+    } else {
+      scrollTopBtn.style.opacity = '0';
+      scrollTopBtn.style.visibility = 'hidden';
+    }
+  });
+
+  //////////////////////////////////////////////////////////////////////////
+
+  // Клік по кнопці - скролимо сторінку вгору
+  scrollTopBtn.addEventListener('click', () => {
+    // 1) Миттєво:
+    // window.scrollTo(0, 0);
+
+    // 2) Плавно (у сучасних браузерах):
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+  //////////////////////////////////////////////////////////////////////////
