@@ -112,14 +112,16 @@ header img {
 .first__screen .first__text {
     display: flex;
     flex-flow: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     
 }
 
 .first__screen h1 {
+    position: relative;
     font-weight: 700;
-    margin: 0 600px 20px 0;
+    margin: 0 0 20px 0;
+    left: 150px;
     padding: 180px 0 10px 0;
     color: #fff;
     font-size: 90px;
@@ -129,7 +131,9 @@ header img {
 }
 
 .first__screen p {
-    margin: 0 555px 14px 0;
+    position: relative;
+    left: 150px;
+    margin: 0 0 14px 0;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -138,7 +142,9 @@ header img {
 }
 
 .first__screen button {
-    margin: 0 1020px 20px 0;
+    position: relative;
+    left: 150px;
+    margin: 0 0 20px 0;
     padding: 20px 24px;
     background: linear-gradient(180deg, #86E900 0%, #006921 100%);
     box-shadow: 0px 4px 4px rgba(0, 55, 15, 0.2);
@@ -723,63 +729,78 @@ footer .bottom {
 
 /* mobile__version */
 
-@media (max-width: 1000px) {
-    header .wrapper a {
+@media (max-width: 900px) {
+    .first__screen h1 {
+        left: 75px;
+    }
+
+    .first__screen p {
+        left: 75px;
+    }
+
+    .first__screen button {
+        left: 75px;
+    }
+}
+
+@media (max-width: 800px) {
+    header .menu__wrapper a {
         display: none;
     }
 
-    .first__screen__img2 {
-        top: -5px;
-        right: 40px;
+    header .menu__wrapper button {
+        display: none;
     }
-}
 
-@media (max-width: 1170px) {
-    .first__screen__img3 {
-        top: 360px;
-    }
-}
-
-@media (max-width: 720px) {
     .first__screen h1 {
-        font-size: 36px;
+        font-size: 50px;
         line-height: 56px;
     }
 
     .first__screen p {
-        padding-top: 16px;
-        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 16px;
+        margin: 0;
     }
 
-    .first__screen p br {
-        display: none;
+    .first__screen button {
+        padding: 16px 20px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 650px) {
+    header img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .first__screen h1 {
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 280px;
+        left: auto;
+        font-size: 32px;
+        line-height: 36px;
     }
 
-    .first__screen {
-        padding: 0px 50px;
+    .first__screen .first__text p {
+        text-align: center;
+        padding-top: 20px;
+        margin: 0 50px;
+        left: auto;
+        white-space: normal;
     }
 
-    .first__screen__img1 {
-        top: 148px;
-        left: -110px;
+    .first__screen .first__text p br {
+       display: none;
     }
 
-    .first__screen__img2 {
-        right: 2px;
-        top: -5px;
-    }
-
-    .first__screen__img4 {
-        width: 105px;
-        height: auto;
-        right: -50px;
-        top: 363px;
-    }
-
-    .first__screen__img3 {
-        width: 122px;
-        height: auto;
-        top: 376px;
-        left: -20px;
+    .first__screen button {
+        justify-content: center;
+        left: auto;
+        margin: 0 auto;
+        padding: 16px 20px;
+        font-size: 16px;
     }
 }
