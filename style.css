@@ -94,14 +94,17 @@ header img {
 
 .first__screen {
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh; /* Щоб коректно працювало на мобільних */
+    background-image: url("./img/section__first/first1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .first__screen::before {
     content: "";
     position: absolute;
-    z-index: -1;
     top: 0;
     left: 0;
     width: 100%;
