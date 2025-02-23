@@ -734,7 +734,10 @@ footer .bottom {
 @media (max-width: 1000px) {
     .wrapper {
         justify-content: center;
-    
+    }
+
+    .criteria1 {
+        margin: 0 50px 50px 50px;
     }
 }
 
@@ -780,6 +783,11 @@ footer .bottom {
 
     .tokar__h2 {
         font-size: 42px;
+    }
+
+    .text__1 {
+        text-align: center;
+        margin: 0;
     }
 }
 
@@ -832,5 +840,11 @@ footer .bottom {
         width: 250px;
     }
 
-    
+    .text__1 {
+        font-size: 20px;
+    }
+
+    .card-text-block h3 {
+        margin: 0 0 100px;
+    }
 }
