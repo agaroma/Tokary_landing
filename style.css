@@ -412,7 +412,7 @@ header img {
 
 .card-text-block h3 {
     margin: 0 0 30px;
-    font-size: 1.2rem;
+    font-size: 20px;
 }
 
 .card-text-block p {
@@ -840,11 +840,27 @@ footer .bottom {
         width: 250px;
     }
 
+    
+
+    
+}
+
+@media (max-width: 450px) {
     .text__1 {
         font-size: 20px;
     }
 
+    .card-text-block {
+        transform: translateY(calc(100% - 80px));
+    }
+
     .card-text-block h3 {
-        margin: 0 0 100px;
+        font-size: 18px;
+        margin-bottom: 120px;
+    }
+
+    .card-text-block p {
+        text-align: center;
+        padding-bottom: 30px;
     }
 }
