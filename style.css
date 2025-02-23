@@ -731,6 +731,34 @@ footer .bottom {
 
 /* mobile__version */
 
+@media (max-width: 1350px) {
+    .section__email__form .row img {
+        max-width: 400px;
+    }
+
+    .section__email__form .row {
+        gap: 100px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .section__email__form .row img {
+        max-width: 400px;
+    }
+
+    .section__email__form .row form .box {
+        width: 100%;
+    }
+
+    .section__email__form .row {
+        gap: 50px;
+    }
+
+    .section__email__form .row {
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 1000px) {
     .wrapper {
         justify-content: center;
@@ -739,6 +767,20 @@ footer .bottom {
     .criteria1 {
         margin: 0 50px 50px 50px;
     }
+
+    .section__email__form .row img {
+        max-width: 350px;
+    }
+
+    .section__email__form .row form .box {
+        width: 80%;
+    }
+
+    .section__email__form .row form .btn__form {
+        width: 200px;
+    }
+
+    
 }
 
 @media (max-width: 900px) {
@@ -862,5 +904,25 @@ footer .bottom {
     .card-text-block p {
         text-align: center;
         padding-bottom: 30px;
+    }
+
+    .section__email__form .row {
+        gap: 20px;
+    }
+
+    .section__email__form .row form {
+        align-items: center;
+    }
+
+    .section__email__form .row img {
+        max-width: 275px;
+    }
+
+    .section__email__form .row form span {
+        font-size: 18px;
+    }
+
+    .section__email__form .row form .box {
+        font-size: 14px;
     }
 }
