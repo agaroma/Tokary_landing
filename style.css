@@ -95,7 +95,8 @@ header img {
 .first__screen {
     position: relative;
     width: 100%;
-    min-height: 100vh; /* Щоб коректно працювало на мобільних */
+    min-height: 100vh;
+    /* Щоб коректно працювало на мобільних */
     background-image: url("./img/section__first/first1.jpg");
     background-size: cover;
     background-position: center;
@@ -117,7 +118,7 @@ header img {
     flex-flow: column;
     align-items: start;
     justify-content: center;
-    
+
 }
 
 .first__screen h1 {
@@ -437,7 +438,8 @@ header img {
 
 .section__email__form .row {
     display: flex;
-    flex-wrap: wrap;  /* дозволяє переносити елементи на менших екранах */
+    flex-wrap: wrap;
+    /* дозволяє переносити елементи на менших екранах */
     justify-content: center;
     align-items: center;
     margin-right: 150px;
@@ -447,7 +449,7 @@ header img {
 .section__email__form .row form {
     display: flex;
     flex-flow: column;
-} 
+}
 
 .section__email__form .row form .box {
     width: 130%;
@@ -490,7 +492,7 @@ header img {
     align-items: center;
     padding-left: 5px;
     margin-bottom: 15px;
-    
+
 }
 
 .section__email__form .row form .gender input:checked {
@@ -499,11 +501,11 @@ header img {
     border-radius: 50%;
 }
 
-.section__email__form .row form .gender #yes:checked ~ label[for=yes] {
+.section__email__form .row form .gender #yes:checked~label[for=yes] {
     color: #006921;
 }
 
-.section__email__form .row form .gender #no:checked ~ label[for=no] {
+.section__email__form .row form .gender #no:checked~label[for=no] {
     color: #006921;
 }
 
@@ -545,13 +547,15 @@ header img {
     max-width: 1440px;
     margin: 0 auto;
     padding: 50px 0;
+    flex-flow: row wrap;
 }
 
 .team__wrapper {
     display: flex;
     flex-flow: column;
     align-items: center;
-    margin: 0 80px;
+    width: 200px;
+    margin: 0 80px 40px 80px;
 }
 
 .team__wrapper p {
@@ -664,7 +668,7 @@ header img {
 /* footer */
 
 footer {
-    
+
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
@@ -714,20 +718,25 @@ footer .bottom {
     height: 70px;
     border: none;
     border-radius: 50%;
-    background-color: #006921; /* Колір фону */
+    background-color: #006921;
+    /* Колір фону */
     color: #fff;
     font-size: 24px;
     cursor: pointer;
-    opacity: 0;         /* Спочатку прихована */
-    visibility: hidden; /* Щоб не можна було натиснути */
+    opacity: 0;
+    /* Спочатку прихована */
+    visibility: hidden;
+    /* Щоб не можна було натиснути */
     transition: opacity 0.3s ease, visibility 0.3s;
-    z-index: 999;       /* Щоб бути поверх інших елементів */
-  }
-  
-  .scroll-top-btn:hover {
-    background-color: #008b2f; /* Трохи світліше при наведенні */
-  }
-  
+    z-index: 999;
+    /* Щоб бути поверх інших елементів */
+}
+
+.scroll-top-btn:hover {
+    background-color: #008b2f;
+    /* Трохи світліше при наведенні */
+}
+
 
 /* mobile__version */
 
@@ -738,6 +747,10 @@ footer .bottom {
 
     .section__email__form .row {
         gap: 100px;
+    }
+
+    .criteria1 {
+        margin: 0 50px 50px 50px;
     }
 }
 
@@ -757,16 +770,13 @@ footer .bottom {
     .section__email__form .row {
         margin: 0 auto;
     }
-}
 
-@media (max-width: 1000px) {
     .wrapper {
         justify-content: center;
     }
+}
 
-    .criteria1 {
-        margin: 0 50px 50px 50px;
-    }
+@media (max-width: 1000px) {
 
     .section__email__form .row img {
         max-width: 350px;
@@ -780,7 +790,7 @@ footer .bottom {
         width: 200px;
     }
 
-    
+
 }
 
 @media (max-width: 900px) {
@@ -831,6 +841,15 @@ footer .bottom {
         text-align: center;
         margin: 0;
     }
+
+    .section__team img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .team__wrapper p {
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -838,7 +857,7 @@ footer .bottom {
         width: 40px;
         height: 40px;
     }
-    
+
     .first__screen h1 {
         text-align: center;
         margin: 0 auto;
@@ -857,7 +876,7 @@ footer .bottom {
     }
 
     .first__screen .first__text p br {
-       display: none;
+        display: none;
     }
 
     .first__screen button {
@@ -873,6 +892,10 @@ footer .bottom {
         line-height: 32px;
     }
 
+    .section__email__form .row form {
+        align-items: center;
+    }
+
     .section__advantages .wrapper .advantages__wrapper p {
         font-size: 24px;
         line-height: 24px;
@@ -882,9 +905,14 @@ footer .bottom {
         width: 250px;
     }
 
-    
+    .team__wrapper p {
+        font-size: 22px;
+    }
 
-    
+    .team__wrapper span {
+        font-size: 18px;
+    }
+
 }
 
 @media (max-width: 450px) {
@@ -910,10 +938,6 @@ footer .bottom {
         gap: 20px;
     }
 
-    .section__email__form .row form {
-        align-items: center;
-    }
-
     .section__email__form .row img {
         max-width: 275px;
     }
@@ -924,5 +948,9 @@ footer .bottom {
 
     .section__email__form .row form .box {
         font-size: 14px;
+    }
+
+    .team__wrapper {
+        margin: 0 20px 40px 20px;
     }
 }
