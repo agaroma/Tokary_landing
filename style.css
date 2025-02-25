@@ -116,7 +116,7 @@ header img {
 .first__screen .first__text {
     display: flex;
     flex-flow: column;
-    align-items: start;
+    align-items: center;
     justify-content: center;
 
 }
@@ -125,7 +125,6 @@ header img {
     position: relative;
     font-weight: 700;
     margin: 0 0 20px 0;
-    left: 150px;
     padding: 180px 0 10px 0;
     color: #fff;
     font-size: 90px;
@@ -136,7 +135,7 @@ header img {
 
 .first__screen p {
     position: relative;
-    left: 150px;
+    text-align: center;
     margin: 0 0 14px 0;
     font-weight: 400;
     font-size: 20px;
@@ -147,7 +146,6 @@ header img {
 
 .first__screen button {
     position: relative;
-    left: 150px;
     margin: 0 0 20px 0;
     padding: 20px 24px;
     background: linear-gradient(180deg, #86E900 0%, #006921 100%);
@@ -791,20 +789,6 @@ footer .bottom {
     }
 
 
-}
-
-@media (max-width: 900px) {
-    .first__screen h1 {
-        left: 75px;
-    }
-
-    .first__screen p {
-        left: 75px;
-    }
-
-    .first__screen button {
-        left: 75px;
-    }
 }
 
 @media (max-width: 800px) {
