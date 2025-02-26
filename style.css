@@ -590,7 +590,11 @@ header img {
 }
 
 .section__qanda .wrapper1 {
-    margin-right: 32px;
+    margin: 0 16px;
+}
+
+.section__qanda .wrapper2 {
+    margin: 0 16px;
 }
 
 .qa__wrapper {
@@ -661,6 +665,7 @@ header img {
     margin: 0 auto;
     height: 400px;
     width: 400px;
+    margin-bottom: 24px;
 }
 
 /* footer */
@@ -750,6 +755,10 @@ footer .bottom {
     .criteria1 {
         margin: 0 50px 50px 50px;
     }
+
+    .section__qanda {
+        padding: 50px 50px;
+    }
 }
 
 @media (max-width: 1150px) {
@@ -786,6 +795,21 @@ footer .bottom {
 
     .section__email__form .row form .btn__form {
         width: 200px;
+    }
+
+    .section__qanda .text__wrapper img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .section__qanda {
+        flex-wrap: wrap;
+        
+    }
+
+    .section__qanda .wrapper1 {
+        justify-content: center;
+
     }
 
 
@@ -833,6 +857,16 @@ footer .bottom {
 
     .team__wrapper p {
         font-size: 24px;
+    }
+
+    .wrapper1 {
+        display: flex;
+        flex-flow: row wrap;
+        margin-bottom: 16px;
+    }
+
+    .section__qanda .text__wrapper {
+        margin: 12px 0;
     }
 }
 
@@ -936,5 +970,13 @@ footer .bottom {
 
     .team__wrapper {
         margin: 0 20px 40px 20px;
+    }
+
+    .section__qanda .text__wrapper img {
+        max-width: 250px;
+    }
+
+    .qa__wrapper {
+        width: 250px;
     }
 }
