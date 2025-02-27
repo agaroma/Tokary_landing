@@ -815,6 +815,23 @@ footer .bottom {
 
 }
 
+@media (max-width: 900px) {
+
+    footer .top {
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;
+        gap: 20px;
+    }
+
+    footer .top a {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        margin: 12px 24px;
+    }
+}
+
 @media (max-width: 800px) {
     header .menu__wrapper a {
         display: none;
