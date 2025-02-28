@@ -996,4 +996,20 @@ footer .bottom {
     .qa__wrapper {
         width: 250px;
     }
+
+    footer .top {
+        padding: 0 50px 20px 50px;
+    }
+
+    footer .bottom {
+        padding: 20px 0;
+    }
+
+    .scroll-top-btn {
+        width: 45px;
+        height: 45px;
+        right: 30px;
+        bottom: 30px;
+        font-size: 20px;
+    }
 }
