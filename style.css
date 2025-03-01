@@ -975,12 +975,16 @@ footer .bottom {
     .section__qanda .text__wrapper {
         margin: 12px 0;
     }
+
+    .card {
+        width: 283px;
+    }
 }
 
 @media (max-width: 650px) {
     header img {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
     }
 
     .first__screen h1 {
