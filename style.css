@@ -6,7 +6,7 @@
 
 body {
     margin: 0px;
-    font-family: "Space Grotesk", serif;
+    font-family: "Bahnschrift", sans-serif;
     overflow-x: hidden;
 }
 
@@ -75,7 +75,6 @@ header img {
     box-shadow: 0px 4px 4px rgba(0, 55, 15, 0.2);
     border-radius: 15px;
     color: #fff;
-    font-weight: bold;
     font-size: 16px;
     white-space: nowrap;
     cursor: pointer;
@@ -90,7 +89,6 @@ header img {
 
 .menu__wrapper a {
     font-family: "Bahnschrift";
-    font-weight: bold;
     font-size: 18px;
     line-height: 20px;
     color: #fff;
@@ -144,12 +142,12 @@ header img {
     font-family: "Intro";
     position: relative;
     font-weight: 400;
-    margin: 0 0 20px 0;
-    padding: 180px 0 10px 0;
+    margin: 0 0 30px 0;
+    padding: 210px 0 20px 0;
     text-align: center;
     color: #fff;
-    font-size: 80px;
-    line-height: 86px;
+    font-size: 72px;
+    line-height: 76px;
     text-shadow: -1px 1px 0px #006921;
     border-bottom: 1px solid #86E900;
 }
@@ -167,15 +165,14 @@ header img {
 }
 
 .first__screen button {
-    font-family: "Bahnschrift";
+    font-family: "Intro";
     position: relative;
     margin: 0 0 20px 0;
-    padding: 20px 24px;
+    padding: 20px 28px;
     background: linear-gradient(180deg, #86E900 0%, #006921 100%);
     box-shadow: 0px 4px 4px rgba(0, 55, 15, 0.2);
     border-radius: 15px;
     color: #fff;
-    font-weight: bold;
     font-size: 18px;
     white-space: nowrap;
     cursor: pointer;
@@ -225,11 +222,11 @@ header img {
 
 .advantages__wrapper p {
     font-family: "Intro";
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 24px;
+    line-height: 34px;
     text-align: center;
     color: #000;
-    margin: 12px 0;
+    margin: 14px 0;
 }
 
 .advantages__wrapper span {
@@ -434,13 +431,14 @@ header img {
 }
 
 .card-text-block h3 {
+    font-weight: normal;
     margin: 0 0 30px;
     font-size: 20px;
 }
 
 .card-text-block p {
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 
@@ -581,7 +579,8 @@ header img {
 }
 
 .team__wrapper p {
-    font-weight: 700;
+    font-family: "Intro";
+    font-weight: 100;
     font-size: 24px;
     line-height: 32px;
     text-align: center;
