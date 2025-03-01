@@ -87,20 +87,21 @@ header img {
     background: linear-gradient(180deg, #006921 0%, #86E900 100%);
 }
 
-.menu__wrapper a {
+.menu__wrapper li {
     font-family: "Bahnschrift";
     font-size: 18px;
     line-height: 20px;
     color: #fff;
     text-decoration: none;
-    display: flex;
+    display: inline-block;
     margin-right: 32px;
     white-space: nowrap;
+    cursor: pointer;
     transition: color 0.2s ease-in-out, transform 0.1s ease-in-out;
 
 }
 
-.menu__wrapper a:hover {
+.menu__wrapper li:hover {
     color: #939393;
     /* Темніший відтінок */
     transform: translateY(-2px);

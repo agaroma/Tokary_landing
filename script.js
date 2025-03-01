@@ -28,7 +28,7 @@ let qa__wrapper = document.querySelectorAll('.qa__wrapper')
 
 
          // Отримуємо всі посилання, що ведуть на якорі (починаються з #)
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  document.querySelectorAll('li[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault(); // Забороняємо стандартну поведінку (миттєвий перехід)
       const targetID = this.getAttribute('href'); // Напр. "#services"
