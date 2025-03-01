@@ -20,6 +20,10 @@ body {
     margin-bottom: 30px;
 }
 
+.open {
+    display: flex !important;
+}
+
 @font-face {
     font-family: "Intro";
     src: url("./fonts/Intro.woff2") format("woff2");
@@ -62,11 +66,6 @@ header img {
 
 }
 
-.menu__wrapper {
-    display: flex;
-    align-items: center;
-}
-
 .menu__wrapper button {
     font-family: "Bahnschrift";
     display: flex;
@@ -88,7 +87,6 @@ header img {
 }
 
 .menu__wrapper li {
-    font-family: "Bahnschrift";
     font-size: 18px;
     line-height: 20px;
     color: #fff;
@@ -103,11 +101,50 @@ header img {
 
 .menu__wrapper li:hover {
     color: #939393;
-    /* Темніший відтінок */
     transform: translateY(-2px);
-    /* Легке підняття */
 }
 
+header .burger {
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+}
+
+header .burger span {
+    width: 80%;
+    height: 2px;
+    transform: scale(1);
+    background-color: #86E900;
+}
+
+header .burger::before, header .burger::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #86E900;
+    transition: all 0.3s ease 0s;
+}
+
+header .burger::before { top: 0 }
+
+header .burger::after { bottom: 0 }
+
+header .burger.active span { transform: scale(0) }
+
+header .burger.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+header .burger.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
 /* start first__screen */
 
 .first__screen {
@@ -857,13 +894,6 @@ footer .bottom {
 }
 
 @media (max-width: 800px) {
-    header .menu__wrapper a {
-        display: none;
-    }
-
-    header .menu__wrapper button {
-        display: none;
-    }
 
     .first__screen h1 {
         font-size: 50px;
@@ -915,6 +945,34 @@ footer .bottom {
     header img {
         width: 50px;
         height: 50px;
+    }
+
+    header .burger {
+        display: flex;
+    }
+
+    header .menu__wrapper {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0; right: 0; bottom: 0; left: 0;
+        overflow-y: auto;
+        padding: 40px 50px;
+        background-color: #000;
+        /* animation: burgerAnimation 0.4s; */
+    }
+
+    header .wrapper .menu__wrapper ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        row-gap: 30px;
+    }
+
+    header .menu__wrapper button {
+        display: none;
     }
 
     .first__screen h1 {

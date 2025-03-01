@@ -86,3 +86,15 @@ let qa__wrapper = document.querySelectorAll('.qa__wrapper')
   });
 
   //////////////////////////////////////////////////////////////////////////
+
+  document.querySelector('.burger').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.querySelector('.menu__wrapper').classList.toggle('open');
+  });
+
+  document.querySelectorAll('.menu__wrapper ul li').forEach(item => {
+    item.addEventListener('click', function() {
+        document.querySelector('.menu__wrapper').classList.remove('open');
+        document.querySelector('.burger').classList.remove('active');
+    });
+});
