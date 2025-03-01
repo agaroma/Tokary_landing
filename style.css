@@ -126,7 +126,8 @@ header .burger span {
     background-color: #86E900;
 }
 
-header .burger::before, header .burger::after {
+header .burger::before,
+header .burger::after {
     content: '';
     position: absolute;
     height: 2px;
@@ -135,11 +136,17 @@ header .burger::before, header .burger::after {
     transition: all 0.3s ease 0s;
 }
 
-header .burger::before { top: 0 }
+header .burger::before {
+    top: 0
+}
 
-header .burger::after { bottom: 0 }
+header .burger::after {
+    bottom: 0
+}
 
-header .burger.active span { transform: scale(0) }
+header .burger.active span {
+    transform: scale(0)
+}
 
 header .burger.active::before {
     top: 50%;
@@ -150,13 +157,13 @@ header .burger.active::after {
     bottom: 50%;
     transform: rotate(45deg) translate(0, 50%);
 }
+
 /* start first__screen */
 
 .first__screen {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    /* Щоб коректно працювало на мобільних */
     background-image: url("./img/section__first/first1.webp");
     background-size: cover;
     background-position: center;
@@ -502,7 +509,6 @@ header .burger.active::after {
 .section__email__form .row {
     display: flex;
     flex-wrap: wrap;
-    /* дозволяє переносити елементи на менших екранах */
     justify-content: center;
     align-items: center;
     margin-right: 150px;
@@ -788,22 +794,17 @@ footer .bottom {
     border: none;
     border-radius: 50%;
     background-color: #006921;
-    /* Колір фону */
     color: #fff;
     font-size: 24px;
     cursor: pointer;
     opacity: 0;
-    /* Спочатку прихована */
     visibility: hidden;
-    /* Щоб не можна було натиснути */
     transition: opacity 0.3s ease, visibility 0.3s;
     z-index: 999;
-    /* Щоб бути поверх інших елементів */
 }
 
 .scroll-top-btn:hover {
     background-color: #008b2f;
-    /* Трохи світліше при наведенні */
 }
 
 
@@ -870,7 +871,7 @@ footer .bottom {
 
     .section__qanda {
         flex-wrap: wrap;
-        
+
     }
 
     .section__qanda .wrapper1 {
@@ -910,7 +911,10 @@ footer .bottom {
         width: 100%;
         height: 100%;
         position: fixed;
-        top: 0; right: 0; bottom: 0; left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
         overflow-y: auto;
         padding: 40px 50px;
         background-color: #000;
@@ -1037,6 +1041,15 @@ footer .bottom {
 }
 
 @media (max-width: 450px) {
+
+    .first__screen h1 {
+        font-size: 32px;
+    }
+
+    .tokar__h2 {
+        font-size: 30px;
+    }
+
     .text__1 {
         font-size: 20px;
     }
@@ -1053,6 +1066,10 @@ footer .bottom {
     .card-text-block p {
         text-align: center;
         padding-bottom: 40px;
+    }
+
+    .criteria1 {
+        padding: 10px;
     }
 
     .section__email__form .row {
