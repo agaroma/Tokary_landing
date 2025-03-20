@@ -678,12 +678,12 @@ header .burger.active::after {
     background: #fcfaff;
     position: relative;
     max-width: 350px;
-    height: fit-content;
+    height: auto;
     margin-bottom: 24px;
     cursor: pointer;
 }
 
-.qa__wrapper p {
+.qa__wrapper h2 {
     font-weight: 500;
     font-size: 20px;
     line-height: 26px;
@@ -693,7 +693,7 @@ header .burger.active::after {
     padding-bottom: 12px;
 }
 
-.qa__wrapper span {
+.qa__wrapper h3 {
     display: flex;
     font-weight: 400;
     font-size: 16px;
@@ -701,6 +701,7 @@ header .burger.active::after {
     color: #006921;
     overflow: hidden;
     transition: 0.3s;
+    margin: 0;
 }
 
 .qa__wrapper img {
@@ -716,23 +717,6 @@ header .burger.active::after {
     flex-flow: column;
     margin-right: 32px;
     max-width: 412px;
-}
-
-.section__qanda h2 {
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 64px;
-    color: #000;
-    margin-top: 0;
-    margin-bottom: 24px;
-}
-
-.section__qanda h3 {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    color: #006921;
-    margin: 0;
 }
 
 .section__qanda .text__wrapper img {
