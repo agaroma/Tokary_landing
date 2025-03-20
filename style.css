@@ -1064,12 +1064,12 @@ footer .bottom {
         transform: translateY(calc(100% - 80px));
     }
 
-    .card-text-block h3 {
+    .card-text-block h2 {
         font-size: 18px;
         margin-bottom: 120px;
     }
 
-    .card-text-block p {
+    .card-text-block h3 {
         text-align: center;
         padding-bottom: 40px;
     }
