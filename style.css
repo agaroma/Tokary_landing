@@ -202,7 +202,7 @@ header .burger.active::after {
     border-bottom: 1px solid #86E900;
 }
 
-.first__screen p {
+.first__screen h2 {
     font-family: "Bahnschrift";
     position: relative;
     text-align: center;
@@ -480,15 +480,17 @@ header .burger.active::after {
     transform: translateY(0);
 }
 
-.card-text-block h3 {
+.card-text-block h2 {
     font-weight: normal;
     margin: 0 0 30px;
     font-size: 20px;
 }
 
-.card-text-block p {
+.card-text-block h3 {
+    font-weight: normal;
     margin: 0;
     font-size: 14px;
+    padding-bottom: 5px;
 }
 
 
@@ -996,7 +998,7 @@ footer .bottom {
         line-height: 36px;
     }
 
-    .first__screen .first__text p {
+    .first__screen .first__text h2 {
         text-align: center;
         padding-top: 20px;
         margin: 0 50px;
